@@ -1,0 +1,20 @@
+<nav class="pink darken-4">
+  <div class="nav-wrapper">
+    <a href="/" class=" brand-logo">Заметки</a>
+    <ul id="nav-mobile" class="dark-text  right hide-on-med-and-down">
+
+      {{#if isIndex}}
+      <li class="active"><a href="/">Все заметки</a></li>
+      {{else}}
+      <li><a href="/">Все заметки</a></li>
+      {{/if}}
+
+      {{#if isCreate}}
+      <li class="active"><a href="/create">Создать заметку</a></li>
+      {{else}}
+      <li><a href="/create">Создать заметку</a></li>
+      {{/if}}
+
+    </ul>
+  </div>
+</nav>
